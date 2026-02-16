@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Rating Prediction</title>
+</head>
+<body>
+    <h2>Movie Rating Prediction</h2>
+    <form method="post">
+        Genre: <input type="number" name="genre"><br><br>
+        Director: <input type="number" name="director"><br><br>
+        Actor 1: <input type="number" name="actor1"><br><br>
+        Actor 2: <input type="number" name="actor2"><br><br>
+        Actor 3: <input type="number" name="actor3"><br><br>
+        <button type="submit">Predict Rating</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Rating: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>

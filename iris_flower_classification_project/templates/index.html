@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Classification</title>
+</head>
+<body>
+    <h2>Iris Flower Classification</h2>
+    <form method="post">
+        Sepal Length: <input name="sepal_length"><br><br>
+        Sepal Width: <input name="sepal_width"><br><br>
+        Petal Length: <input name="petal_length"><br><br>
+        Petal Width: <input name="petal_width"><br><br>
+        <button type="submit">Predict Species</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Species: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
